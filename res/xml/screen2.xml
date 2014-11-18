@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     <PreferenceCategory android:title="TitleX">
-        <CheckBoxPreference android:key="checkbox_preference_x2"
-            android:title="checkbox_title_x2"
-            android:summary="checkbox_summary_x2" />
+        <CheckBoxPreference android:key="pref_sound"
+            android:title="サウンド再生"
+            android:summary="サウンドを鳴らすかどうか" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="TitleY">

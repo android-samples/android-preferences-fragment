@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     <PreferenceCategory android:title="TitleA">
-        <CheckBoxPreference android:key="checkbox_preference"
-            android:title="checkbox_title_a1"
-            android:summary="checkbox_summary_a1" />
+        <CheckBoxPreference android:key="pref_anim"
+            android:title="アニメーション"
+            android:summary="なめらかに動かすかどうか" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="TitleB">

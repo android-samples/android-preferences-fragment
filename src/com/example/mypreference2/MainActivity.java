@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.os.Build;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 
 public class MainActivity extends Activity {
 
@@ -25,6 +28,21 @@ public class MainActivity extends Activity {
 		// 設定画面起動
 		Intent intent = new Intent(this, MyPreferenceActivity.class);
 		startActivity(intent);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		// 設定の読み取り
+		SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+		// text1
+		TextView text1 = (TextView)findViewById(R.id.textView1);
+		boolean anim = pref.getBoolean("pref_anim", false);
+		text1.setText("アニメーション設定：" + (anim ? "ON" : "OFF"));
+		// text2
+		TextView text2 = (TextView)findViewById(R.id.textView2);
+		boolean sound = pref.getBoolean("pref_sound", false);
+		text2.setText("サウンド設定：" + (sound ? "ON" : "OFF"));
 	}
 
 	@Override
