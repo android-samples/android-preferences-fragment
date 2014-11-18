@@ -2,13 +2,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
     <PreferenceCategory android:title="TitleA">
         <CheckBoxPreference android:key="checkbox_preference"
-            android:title="checkbox_title_1"
-            android:summary="checkbox_summary_1" />
+            android:title="checkbox_title_a1"
+            android:summary="checkbox_summary_a1" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="TitleB">
         <EditTextPreference android:key="edittext_preference"
-            android:title="edittext_title_1"
-            android:summary="edittext_summary_1" />
+            android:title="edittext_title_b1"
+            android:summary="edittext_summary_b1" />
     </PreferenceCategory>
 </PreferenceScreen>

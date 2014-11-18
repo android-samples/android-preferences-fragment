@@ -29,11 +29,20 @@ public class MyPreferenceActivity extends PreferenceActivity {
 	}
 
 	// 設定画面用フラグメント
-	public static class MyPreferenceFragment extends PreferenceFragment {
+	public static class MyPreferenceFragment1 extends PreferenceFragment {
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			addPreferencesFromResource(R.xml.screen1);
+		}
+	}
+	
+	// 設定画面用フラグメント
+	public static class MyPreferenceFragment2 extends PreferenceFragment {
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			addPreferencesFromResource(R.xml.screen2);
 		}
 	}
 }

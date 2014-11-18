@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
-    <header android:fragment="com.example.mypreference2.MyPreferenceActivity$MyPreferenceFragment"
-        android:title="Pref title test"
-        android:summary="Pref summary test"/>
+    <header android:fragment="com.example.mypreference2.MyPreferenceActivity$MyPreferenceFragment1"
+        android:title="Pref title test1"
+        android:summary="Pref summary test1"/>
+    <header android:fragment="com.example.mypreference2.MyPreferenceActivity$MyPreferenceFragment2"
+        android:title="Pref title test2"
+        android:summary="Pref summary test2"/>
 </preference-headers>

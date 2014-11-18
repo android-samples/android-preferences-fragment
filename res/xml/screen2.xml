@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="TitleX">
+        <CheckBoxPreference android:key="checkbox_preference_x2"
+            android:title="checkbox_title_x2"
+            android:summary="checkbox_summary_x2" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="TitleY">
+        <EditTextPreference android:key="edittext_preference_y2"
+            android:title="edittext_title_y2"
+            android:summary="edittext_summary_y2" />
+        <CheckBoxPreference android:key="checkbox_preference_y2"
+            android:title="checkbox_title_y2"
+            android:summary="checkbox_summary_y2" />
+    </PreferenceCategory>
+</PreferenceScreen>
